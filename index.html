@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcualte disans</title>
+    <script src="script.js"></script>
+    <style>
+        *{
+            font-size: large;
+            color: white;
+        }
+        body{
+            background-color: #1A1A1A;
+            margin: 0px;
+        }
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10%;
+            width: 100%;
+        }
+        .input{
+            width: fit-content;
+        }
+        input{
+            color: black;
+        }
+        button{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="input">
+            <div id="sea">
+                    <label for="knot">Speed in KNOT</label> <br>
+                    <input type="number" id="knot" placeholder="ex. 5.5"><br>
+                    <label for="nm">Distance in NM</label><br>
+                    <input type="number" id="nm"><br>
+                    <button type="submit" onclick="seaSpeed()">Submit</button><br>
+            </div>
+            <div id="metric">
+                <label for="kmh">Speed in km/h</label><br>
+                <input type="number" id="kmh" placeholder="10"><br>
+                <label for="km">Distance in KM</label><br>
+                <input type="number" id="km"><br>
+                <button type="submit" onclick="noobBoatPerson()">Submit</button><br>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div id="answer"></div>
+    </div>
+    
+</body>
+</html>
